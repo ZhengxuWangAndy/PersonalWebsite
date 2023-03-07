@@ -1,3 +1,3 @@
-How to compile and run:
-npm install
-npm start
+How to compile and run:  
+npm install  
+npm start  
