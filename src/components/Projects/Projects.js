@@ -5,6 +5,8 @@ import Particle from "../Particle";
 import UmpScores from "../../Assets/Projects/UmpScores.png";
 import Atos from "../../Assets/Projects/Atos.png";
 import research from "../../Assets/Projects/research.jpg";
+import asiaInfo from "../../Assets/Projects/asiaInfo.jpg";
+
 
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
@@ -148,49 +150,35 @@ function Projects() {
             </Card>
           </Col>
 
-          {/* research project */}
+          {/* AsiaInfo intern project */}
           <Col xs={12} sm={6} md={4} className="project-card">
             <Card className="project-card-view">
-              <Card.Img variant="top" src={research} alt="card-img" style={{ height: "250px" }} />
+              <Card.Img variant="top" src={asiaInfo} alt="card-img" style={{ height: "150px" }} />
               <Card.Body>
-                <Card.Title><strong style={{ color: "white" }}>{"Research Assistant"} </strong>
+                <Card.Title><strong style={{ color: "white" }}>{"NLP Engineer Intern"} </strong>
                   <br />
-                  <strong style={{ color: "limegreen" }}>{"Chinese Academy of Sciences"}</strong></Card.Title>
+                  <strong style={{ color: "limegreen" }}>{"Asia-Info Data Co. Ltd"}</strong></Card.Title>
                 <Card.Text style={{ textAlign: "justify" }}>
                   <br />
-                  {"MRI Brain Image Segmentation Assist Alzheimer’s Diagnosis"}
+                  {"Built Scrapy Web-Crawler to get 200k medicine instructions as training corpus, build the "}<strong style={{ color: "limegreen" }}>{"Tensorflow(Keras)-based CNN and RNN models"}</strong>{" to train classification model mean-AP reached 96%."}
                   <br />
                   <br />
-                  {"Added "}<strong style={{ color: "limegreen" }}>{"Self-Attention and Generalized-Dice Loss to PyTorch-based 3D-Unet model"}</strong>{" to segment the Hippocampus region and automatically quantify the degree of Hippocampal atrophy. The dice coefficient of the segmentation result exceeds 0.9."}
-                  <br />
-                  <br />
-                  {"Completed the visualization of model prediction results using "}<strong style={{ color: "limegreen" }}>{"Matplotlib and FreeSurfer."}</strong>
-
-
+                  {"Implemented "}<strong style={{ color: "limegreen" }}>{"Transformer and CRF model"}</strong>{" to implement NER and get triplets, constructed a KG."}
                 </Card.Text>
-                {
-                  <Button
-                    variant="primary"
-                    onClick={() => window.open("https://drive.google.com/file/d/1WVqT6weYu9A2P0LqteIFvl5sVO8RiIn8/view")}
-                    style={{ marginLeft: "10px" }}
-                  >
-                    <CgWebsite /> &nbsp;
-                    {"PDF"}
-                  </Button>
-                }
-                {
-                  <Button
-                    variant="primary"
-                    onClick={() => window.open("https://kns.cnki.net/kcms2/article/abstract?v=3uoqIhG8C44YLTlOAiTRKibYlV5Vjs7iJTKGjg9uTdeTsOI_ra5_XaTH7EbalgZBjFBbsEwRY2Nvn0CrlW-IRHBRCWY_UhRB&uniplatform=NZKPT")}
-                    style={{ marginLeft: "10px" }}
-                  >
-                    <CgWebsite /> &nbsp;
-                    {"CNKI"}
-                  </Button>
-                }
+                {<Button
+                  variant="primary"
+                  href={"https://github.com/ZhengxuWangAndy/1D-CNN-for-chinese-text-NLP"}
+                  target="_blank"
+                  style={{ marginLeft: "10px" }}
+                >
+                  <BsGithub /> &nbsp;
+                  {"GitHub"}
+                </Button>}
               </Card.Body>
             </Card>
           </Col>
+
+          
 
         </Row>
       </Container>
