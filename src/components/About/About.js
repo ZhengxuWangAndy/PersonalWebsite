@@ -7,6 +7,48 @@ import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/home.svg";
 import Toolstack from "./Toolstack";
 
+
+import {
+  DiJavascript1,
+  DiReact,
+  DiNodejs,
+  DiMongodb,
+  DiPython,
+  DiGit,
+  DiJava,
+  DiMysql,
+  DiDocker,
+  DiAws,
+  DiDjango
+} from "react-icons/di";
+
+import {
+  SiPytorch,
+  SiFirebase,
+  SiNextdotjs,
+  SiMicrosoftazure,
+  SiOracle,
+  SiPostgresql,
+  SiTypescript,
+  SiCplusplus,
+  SiMicrosoftsqlserver,
+  SiAmazonaws,
+  SiMongodb,
+  SiNeo4J,
+  SiElasticsearch,
+  SiVuedotjs,
+  SiTensorflow,
+  SiSpring,
+  SiFlask,
+  SiQt,
+  SiKubernetes,
+  SiLinux,
+  SiVisualstudiocode,
+  SiPostman,
+  SiHeroku,
+  SiVercel,
+} from "react-icons/si";
+
 function About() {
   return (
     <Container fluid className="about-section">
@@ -22,7 +64,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+              Who <strong className="purple">I'M</strong>
             </h1>
             <Aboutcard />
           </Col>
@@ -37,13 +79,141 @@ function About() {
         <h1 className="project-heading">
           Professional <strong className="purple">Skillset </strong>
         </h1>
+        <h2>Languages</h2>
+        <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+          <Col xs={4} md={2} className="tech-icons">
+            <DiPython />
+            <p style={{ fontSize: '18px' }}>Python</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <DiJava />
+            <p style={{ fontSize: '18px' }}>Java</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <DiJavascript1 />
+            <p style={{ fontSize: '18px' }}>JavaScript</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <SiTypescript />
+            <p style={{ fontSize: '18px' }}>TypeScript</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <SiCplusplus />
+            <p style={{ fontSize: '18px' }}>C++</p>
+          </Col>
+        </Row>
+        <h2>Frameworks & Libraries</h2>
+        <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+          <Col xs={4} md={2} className="tech-icons">
+            <DiReact />
+            <p style={{ fontSize: '18px' }}>React</p>
+          </Col>
 
-        <Techstack />
+          <Col xs={4} md={2} className="tech-icons">
+            <SiVuedotjs />
+            <p style={{ fontSize: '18px' }}>Vue.js</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <SiPytorch />
+            <p style={{ fontSize: '18px' }}>PyTorch</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <SiTensorflow />
+            <p style={{ fontSize: '18px' }}>TensorFlow</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <SiSpring />
+            <p style={{ fontSize: '18px' }}>Spring Boot</p>
+          </Col>
+        </Row>
+        <h2>Databases</h2>
+        <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+          <Col xs={4} md={2} className="tech-icons">
+            <DiMysql />
+            <p style={{ fontSize: '18px' }}>MySQL</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <SiOracle />
+            <p style={{ fontSize: '18px' }}>Oracle DB</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <SiPostgresql />
+            <p style={{ fontSize: '18px' }}>PostgreSQL</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <SiMicrosoftsqlserver />
+            <p style={{ fontSize: '18px' }}>SQL Server</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <SiMongodb />
+            <p style={{ fontSize: '18px' }}>MongoDB</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <SiNeo4J />
+            <p style={{ fontSize: '18px' }}>Neo4J</p>
+          </Col>
+        </Row>
+        <h2>Cloud Services</h2>
+        <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+          <Col xs={4} md={2} className="tech-icons">
+            <SiMicrosoftazure />
+            <p style={{ fontSize: '18px' }}>Microsoft Azure</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <SiAmazonaws />
+            <p style={{ fontSize: '18px' }}>AWS-RDS</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <SiKubernetes />
+            <p style={{ fontSize: '18px' }}>Kubernetes</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <SiElasticsearch />
+            <p style={{ fontSize: '18px' }}>ElasticSearch</p>
+          </Col>
+        </Row>
+        <h2>Tools</h2>
+        <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+          <Col xs={4} md={2} className="tech-icons">
+            <DiGit />
+            <p style={{ fontSize: '18px' }}>Git</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <DiDocker />
+            <p style={{ fontSize: '18px' }}>Docker</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <SiFlask />
+            <p style={{ fontSize: '18px' }}>Flask</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <DiDjango />
+            <p style={{ fontSize: '18px' }}>Django</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <SiQt />
+            <p style={{ fontSize: '18px' }}>QT-C++</p>
+          </Col>
+   
+        <Col xs={4} md={2} className="tech-icons">
+        <SiLinux />
+        <p style={{ fontSize: '18px' }}>Linux</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiVisualstudiocode />
+        <p style={{ fontSize: '18px' }}>VS code</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPostman />
+        <p style={{ fontSize: '18px' }}>Postman</p>
+      </Col>
+      </Row>
+        {/* <Techstack /> */}
 
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
-        </h1>
-        <Toolstack />
+        {/* <h1 className="project-heading">
+          <strong className="purple">Tools</strong>
+        </h1> */}
+        {/* <Toolstack /> */}
 
         <Github />
       </Container>
