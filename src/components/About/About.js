@@ -5,6 +5,7 @@ import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/home.svg";
+import myPic from "../../Assets/avatar3.jpg";
 import Toolstack from "./Toolstack";
 
 
@@ -73,7 +74,10 @@ function About() {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <img src={myPic} alt="about" className="img-fluid" style={{
+              maxWidth: "70%",
+              height: "auto"
+            }} />
           </Col>
         </Row>
         <h1 className="project-heading">
@@ -194,20 +198,20 @@ function About() {
             <SiQt />
             <p style={{ fontSize: '18px' }}>QT-C++</p>
           </Col>
-   
-        <Col xs={4} md={2} className="tech-icons">
-        <SiLinux />
-        <p style={{ fontSize: '18px' }}>Linux</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
-        <p style={{ fontSize: '18px' }}>VS code</p>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-        <p style={{ fontSize: '18px' }}>Postman</p>
-      </Col>
-      </Row>
+
+          <Col xs={4} md={2} className="tech-icons">
+            <SiLinux />
+            <p style={{ fontSize: '18px' }}>Linux</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <SiVisualstudiocode />
+            <p style={{ fontSize: '18px' }}>VS code</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <SiPostman />
+            <p style={{ fontSize: '18px' }}>Postman</p>
+          </Col>
+        </Row>
         {/* <Techstack /> */}
 
         {/* <h1 className="project-heading">
