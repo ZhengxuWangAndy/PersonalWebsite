@@ -6,6 +6,8 @@ import UmpScores from "../../Assets/Projects/UmpScores.png";
 import Atos from "../../Assets/Projects/Atos.png";
 import research from "../../Assets/Projects/research.jpg";
 import asiaInfo from "../../Assets/Projects/asiaInfo.jpg";
+import Dell from "../../Assets/Projects/Dell.jpg";
+import bestFriends from  "../../Assets/Projects/Bestfriends.jpg";
 
 
 import Card from "react-bootstrap/Card";
@@ -26,6 +28,81 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "1px" }}>
+
+          {/* project: SocialTechLabs */}
+          <Col xs={12} sm={6} md={4} className="project-card">
+            <Card className="project-card-view">
+              <Card.Img variant="top" src={bestFriends} alt="card-img" />
+              <Card.Body>
+                <Card.Title><strong style={{ color: "white" }}>{"Software Engineer Intern - Co-founder"} </strong>
+                  <br />
+                  <strong style={{ color: "limegreen" }}>{"SocialTechLabs Inc."}</strong></Card.Title>
+                <Card.Text style={{ textAlign: "justify" }}>
+                  {"An app about friendships"}
+                  <br />
+                  {/* <strong style={{ color: "white" }}>
+                    {"Front-end: "}</strong>
+                  <br /> */}
+                  {/* <strong style={{ color: "limegreen" }}> */}
+                    {"•	Using "}<strong style={{ color: "limegreen" }}>{"SwiftUI"}</strong> {" created front-end new features including drawing and send to friends, save messages as dairy, and a calendar view of emotional dairy etc."}
+                    <br />
+                    {"•	Writing Back-end "}<strong style={{ color: "limegreen" }}>{"Restful APIs"}</strong> {" using "}<strong style={{ color: "limegreen" }}>{"Golang"}</strong> {" and deploy it as docker image in "}<strong style={{ color: "limegreen" }}>{"AWS EKS"}</strong> {", also used "}<strong style={{ color: "limegreen" }}>{"Redis, DynamoDB, S3, EC2"}</strong> {". "}
+                </Card.Text>
+                {
+                  <Button
+                    variant="primary"
+                    href={"https://socialtechlabs.com/"}
+                    target="_blank"
+                    style={{ marginLeft: "10px" }}
+                  >
+                    <CgWebsite /> &nbsp;
+                    {"Website"}
+                  </Button>
+                }
+                
+                {
+                  <Button
+                    variant="primary"
+                    href={"https://apps.apple.com/app/bestfriendsnetwork/id1573517037"}
+                    target="_blank"
+                    style={{ marginLeft: "10px" }}
+                  >
+                    <CgWebsite /> &nbsp;
+                    {"AppStore"}
+                  </Button>
+                }
+
+              </Card.Body>
+            </Card>
+          </Col>
+
+          {/* project: Dell Technologies */}
+          <Col xs={12} sm={6} md={4} className="project-card">
+            <Card className="project-card-view">
+              <Card.Img variant="top" src={Dell} alt="card-img" />
+              <Card.Body>
+                <Card.Title><strong style={{ color: "white" }}>{"Software Engineer Intern (Automation)"} </strong>
+                  <br />
+                  <strong style={{ color: "limegreen" }}>{"Dell Technologies EMC"}</strong></Card.Title>
+                <Card.Text style={{ textAlign: "justify" }}>
+                  {"Optimize manual work into an automatic workflow"}
+                  <br />
+                  {/* <strong style={{ color: "white" }}>
+                    {"Front-end: "}</strong>
+                  <br /> */}
+                  {/* <strong style={{ color: "limegreen" }}> */}
+                    {"•	Using "}<strong style={{ color: "limegreen" }}>{"PowerBI"}</strong> {"connect to SqlServer to fetch data and create a "} <strong style={{ color: "limegreen" }}>{"Data Monitoring Report"} </strong> {". Set data error alert and auto-trigger the "} <strong style={{ color: "limegreen" }}>{"PowerAutomate"} </strong> {" flow to notify PMs and create MS List items. Issues finding speed from one week to one day."}
+                    <br />
+                    {"•	Create "}<strong style={{ color: "limegreen" }}>{"PowerAutomate"}</strong> {" desktop flow help PMs auto batch update TMS platform jobs’ information by filling Excel template."}
+                    <br />
+                    {"•	Learned "}<strong style={{ color: "limegreen" }}>{"APEX cloud platform"}</strong> {" and "}<strong style={{ color: "limegreen" }}>{"VxRail."}</strong>
+                  {/* <br />
+                  <strong style={{ color: "white" }}>
+                    {"Back-end: "}</strong> */}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
 
           {/* project: BU Spark & UmpScores */}
           <Col xs={12} sm={6} md={4} className="project-card">
@@ -74,7 +151,7 @@ function Projects() {
             <Card className="project-card-view">
               <Card.Img variant="top" src={Atos} alt="card-img" style={{ height: "250px" }} />
               <Card.Body>
-                <Card.Title><strong style={{ color: "white" }}>{"Data Engineer"} </strong>
+                <Card.Title><strong style={{ color: "white" }}>{"Software Engineer Full-time"} </strong>
                   <br />
                   <strong style={{ color: "limegreen" }}>{"Atos Technology Co. Ltd"}</strong></Card.Title>
                 <Card.Text style={{ textAlign: "justify" }}>
