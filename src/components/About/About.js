@@ -20,7 +20,8 @@ import {
   DiMysql,
   DiDocker,
   DiAws,
-  DiDjango
+  DiDjango,
+  DiGo
 } from "react-icons/di";
 
 import {
@@ -48,6 +49,7 @@ import {
   SiPostman,
   SiHeroku,
   SiVercel,
+  SiGo
 } from "react-icons/si";
 
 function About() {
@@ -104,6 +106,10 @@ function About() {
           <Col xs={4} md={2} className="tech-icons">
             <SiCplusplus />
             <p style={{ fontSize: '18px' }}>C++</p>
+          </Col>
+          <Col xs={4} md={2} className="tech-icons">
+            <SiGo />
+            <p style={{ fontSize: '18px' }}>Golang</p>
           </Col>
         </Row>
         <h2>Frameworks & Libraries</h2>
@@ -165,7 +171,7 @@ function About() {
           </Col>
           <Col xs={4} md={2} className="tech-icons">
             <SiAmazonaws />
-            <p style={{ fontSize: '18px' }}>AWS-RDS</p>
+            <p style={{ fontSize: '18px' }}>AWS</p>
           </Col>
           <Col xs={4} md={2} className="tech-icons">
             <SiKubernetes />

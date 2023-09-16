@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import UmpScores from "../../Assets/Projects/UmpScores.png";
-import Atos from "../../Assets/Projects/Atos.png";
+import Atos from "../../Assets/Projects/Atos2.jpg";
 import research from "../../Assets/Projects/research.jpg";
 import asiaInfo from "../../Assets/Projects/asiaInfo.jpg";
 import Dell from "../../Assets/Projects/Dell.jpg";
@@ -34,7 +34,7 @@ function Projects() {
             <Card className="project-card-view">
               <Card.Img variant="top" src={bestFriends} alt="card-img" />
               <Card.Body>
-                <Card.Title><strong style={{ color: "white" }}>{"Software Engineer Intern - Co-founder"} </strong>
+                <Card.Title><strong style={{ color: "white" }}>{"Software Engineer Intern -> Co-founder"} </strong>
                   <br />
                   <strong style={{ color: "limegreen" }}>{"SocialTechLabs Inc."}</strong></Card.Title>
                 <Card.Text style={{ textAlign: "justify" }}>
@@ -167,7 +167,9 @@ function Projects() {
                   <br />
                   <strong style={{ color: "white" }}>{"Search Engine:"}</strong>
                   <br />
-                  {"Optimized the "}<strong style={{ color: "limegreen" }}>{"ElasticSearch micro-service"}</strong>{", delivering KG-based search and recommendation functionality and implementing a scalable, distributed deployment. Connected the system to "}<strong style={{ color: "limegreen" }}>{"OracleDB"}</strong>{" to provide efficient data management and use "}<strong style={{ color: "limegreen" }}>{"Redis"}</strong>{" to accelerate high concurrency search speed."}
+                  {"Optimized the "}<strong style={{ color: "limegreen" }}>{"ElasticSearch micro-service"}</strong>{", delivering KG-based search and recommendation functionality and implementing a scalable, distributed deployment."} 
+                  <br />
+                  {"Connected the system to "}<strong style={{ color: "limegreen" }}>{"OracleDB"}</strong>{" to provide efficient data management and use "}<strong style={{ color: "limegreen" }}>{"Redis"}</strong>{" to accelerate high concurrency search speed."}
                 </Card.Text>
                 {
                   <Button
