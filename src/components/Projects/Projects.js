@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
+// import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import UmpScores from "../../Assets/Projects/UmpScores.png";
 import Atos from "../../Assets/Projects/Atos2.jpg";
@@ -14,7 +14,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
-import ReactMarkdown from "react-markdown";
+// import ReactMarkdown from "react-markdown";
 
 function Projects() {
   return (

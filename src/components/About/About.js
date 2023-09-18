@@ -2,32 +2,26 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Github from "./Github";
-import Techstack from "./Techstack";
+// import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/home.svg";
+// import laptopImg from "../../Assets/home.svg";
 import myPic from "../../Assets/avatar3.jpg";
-import Toolstack from "./Toolstack";
+// import Toolstack from "./Toolstack";
 
 
 import {
   DiJavascript1,
   DiReact,
-  DiNodejs,
-  DiMongodb,
   DiPython,
   DiGit,
   DiJava,
   DiMysql,
   DiDocker,
-  DiAws,
   DiDjango,
-  DiGo
 } from "react-icons/di";
 
 import {
   SiPytorch,
-  SiFirebase,
-  SiNextdotjs,
   SiMicrosoftazure,
   SiOracle,
   SiPostgresql,
@@ -47,8 +41,6 @@ import {
   SiLinux,
   SiVisualstudiocode,
   SiPostman,
-  SiHeroku,
-  SiVercel,
   SiGo
 } from "react-icons/si";
 
